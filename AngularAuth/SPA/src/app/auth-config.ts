@@ -19,8 +19,8 @@ import {
 export const msalConfig: Configuration = {
   auth: {
     clientId: 'aa28c174-7ebc-4574-b65b-28b7bef6c554', // This is the ONLY mandatory field that you need to supply.
-    authority: 'https://mcapsitsyexternalid.ciamlogin.com/', // Replace the placeholder with your tenant subdomain
-    redirectUri: '/', // Points to window.location.origin by default. You must register this URI on Azure portal/App Registration.
+    authority: 'https://login.microsoftonline.com/05fc03d7-bfef-4874-88a9-cbc2ab999f1a', //'https://mcapsitsyexternalid.ciamlogin.com/', // Replace the placeholder with your tenant subdomain
+    redirectUri: 'https://itsyexternalauthenttest.z13.web.core.windows.net/', // Points to window.location.origin by default. You must register this URI on Azure portal/App Registration.
     postLogoutRedirectUri: '/', // Points to window.location.origin by default.
   },
   cache: {
